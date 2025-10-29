@@ -54,7 +54,7 @@ class _FormPageStats extends State<FormPage>{
 
     _submitResult = '';
 
-    //화면 재빌드
+    //화면 재빌드cv
     setState(() {});
   }
 
