@@ -21,8 +21,8 @@ class _MainTabScreenState extends State<MainTabScreen>{
       _selectedIndex = index;
     });
   }
-  static const List<Widget> _widgetList = [
-    HomeTab(),
+  late final List<Widget> _widgetList = [
+    HomeTab(onTabSwitch: _onTabHandler,),
     CategoryTab(),
     SearchTab(),
     MyTab(),
@@ -32,7 +32,7 @@ class _MainTabScreenState extends State<MainTabScreen>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('kmarket'),),
+      appBar: null,
       body: Center(
         child: _widgetList.elementAt(_selectedIndex)
       ),
